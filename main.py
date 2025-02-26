@@ -8,9 +8,10 @@ load_dotenv()
 
 # Configure Google Generative AI
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize the model
-model = genai.GenerativeModel("gemini-2.0-pro")
+model = genai.GenerativeModel("gemini-pro")
 
 # Streamlit app title
 st.title("AI Chatbot with Google Gemini")
