@@ -12,7 +12,7 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Initialize the language model
-llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_API_KEY)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
 # Streamlit app title
 st.title("Phoenix AI 🤖")
